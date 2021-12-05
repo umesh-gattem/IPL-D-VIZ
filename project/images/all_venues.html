@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b960d4a4d63b431bad0029240aabf5d2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b960d4a4d63b431bad0029240aabf5d2" ></div>
+        
+</body>
+<script>    
+    
+            var map_b960d4a4d63b431bad0029240aabf5d2 = L.map(
+                "map_b960d4a4d63b431bad0029240aabf5d2",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ce5567b4ee21428d83f69aec5b41be50 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+            var marker_7fdb6624b6d048599ef3ef33a85125b0 = L.marker(
+                [24.416085250000002, 54.452600653174294],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_dfcd7c36f5834b27859bd5eb44dd9ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c13038351674f9080082d5be77a9f22 = $(`<div id="html_9c13038351674f9080082d5be77a9f22" style="width: 100.0%; height: 100.0%;">Sheikh Zayed Stadium, Abu Dhabi</div>`)[0];
+            popup_dfcd7c36f5834b27859bd5eb44dd9ba5.setContent(html_9c13038351674f9080082d5be77a9f22);
+        
+
+        marker_7fdb6624b6d048599ef3ef33a85125b0.bindPopup(popup_dfcd7c36f5834b27859bd5eb44dd9ba5)
+        ;
+
+        
+    
+    
+            marker_7fdb6624b6d048599ef3ef33a85125b0.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be1062f6065945ed8cb9599f38851fde = L.marker(
+                [25.046738400000002, 55.219006962225635],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_502994422168403ab6a8f7d903b294ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00971ab92fd542b6aa47072f1cd46cdc = $(`<div id="html_00971ab92fd542b6aa47072f1cd46cdc" style="width: 100.0%; height: 100.0%;">Dubai International Cricket Stadium</div>`)[0];
+            popup_502994422168403ab6a8f7d903b294ea.setContent(html_00971ab92fd542b6aa47072f1cd46cdc);
+        
+
+        marker_be1062f6065945ed8cb9599f38851fde.bindPopup(popup_502994422168403ab6a8f7d903b294ea)
+        ;
+
+        
+    
+    
+            marker_be1062f6065945ed8cb9599f38851fde.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33be2f92da6a473b9ba49e841e576aa1 = L.marker(
+                [25.33078055, 55.42090675730459],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_0d8b12a0a309449db6dae8d1b866f09c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a680e7e5789340fcb31800634ebb8f96 = $(`<div id="html_a680e7e5789340fcb31800634ebb8f96" style="width: 100.0%; height: 100.0%;">Sharjah Cricket Stadium</div>`)[0];
+            popup_0d8b12a0a309449db6dae8d1b866f09c.setContent(html_a680e7e5789340fcb31800634ebb8f96);
+        
+
+        marker_33be2f92da6a473b9ba49e841e576aa1.bindPopup(popup_0d8b12a0a309449db6dae8d1b866f09c)
+        ;
+
+        
+    
+    
+            marker_33be2f92da6a473b9ba49e841e576aa1.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ff5aeb82d114028bff9c2f7ae60f475 = L.marker(
+                [13.0626873, 80.27922739309865],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_5a6eb2b2cdb14509b75e24c2766f81df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68166c557342493586f623d5ca6e4c3b = $(`<div id="html_68166c557342493586f623d5ca6e4c3b" style="width: 100.0%; height: 100.0%;">MA Chidambaram Stadium, Chennai</div>`)[0];
+            popup_5a6eb2b2cdb14509b75e24c2766f81df.setContent(html_68166c557342493586f623d5ca6e4c3b);
+        
+
+        marker_7ff5aeb82d114028bff9c2f7ae60f475.bindPopup(popup_5a6eb2b2cdb14509b75e24c2766f81df)
+        ;
+
+        
+    
+    
+            marker_7ff5aeb82d114028bff9c2f7ae60f475.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a932d1491b84816ab8fd5d5e26f2213 = L.marker(
+                [22.564561349999998, 88.34424156337812],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_7d5ac071879149f4b34478fef005e8e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00c161cecebc4ca3b5afaeeca3417fec = $(`<div id="html_00c161cecebc4ca3b5afaeeca3417fec" style="width: 100.0%; height: 100.0%;">Eden Gardens, Kolkata</div>`)[0];
+            popup_7d5ac071879149f4b34478fef005e8e7.setContent(html_00c161cecebc4ca3b5afaeeca3417fec);
+        
+
+        marker_1a932d1491b84816ab8fd5d5e26f2213.bindPopup(popup_7d5ac071879149f4b34478fef005e8e7)
+        ;
+
+        
+    
+    
+            marker_1a932d1491b84816ab8fd5d5e26f2213.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59c72083f6034b46ac1792cba34426b2 = L.marker(
+                [18.9385497, 72.82574081674653],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_6fa8b91d45f34822a470923384d9e013 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52d67045048449b28cf66be4a9b20404 = $(`<div id="html_52d67045048449b28cf66be4a9b20404" style="width: 100.0%; height: 100.0%;">Wankhede Stadium, Mumbai</div>`)[0];
+            popup_6fa8b91d45f34822a470923384d9e013.setContent(html_52d67045048449b28cf66be4a9b20404);
+        
+
+        marker_59c72083f6034b46ac1792cba34426b2.bindPopup(popup_6fa8b91d45f34822a470923384d9e013)
+        ;
+
+        
+    
+    
+            marker_59c72083f6034b46ac1792cba34426b2.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b04a6c0a9e5449ea73402ecf35d4eb9 = L.marker(
+                [26.8939911, 75.80322693888199],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_03867f65b9594fe9a5a25aaa94598872 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0788dcb0e8dd4346812d37bf9fb8759a = $(`<div id="html_0788dcb0e8dd4346812d37bf9fb8759a" style="width: 100.0%; height: 100.0%;">Sawai Mansingh Stadium, Jaipur</div>`)[0];
+            popup_03867f65b9594fe9a5a25aaa94598872.setContent(html_0788dcb0e8dd4346812d37bf9fb8759a);
+        
+
+        marker_9b04a6c0a9e5449ea73402ecf35d4eb9.bindPopup(popup_03867f65b9594fe9a5a25aaa94598872)
+        ;
+
+        
+    
+    
+            marker_9b04a6c0a9e5449ea73402ecf35d4eb9.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d1f5873386945afb4cf59cc1464c8c5 = L.marker(
+                [28.637731549999998, 77.24309341201518],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_cc51049408cc46eda5245c5aa1d90505 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b33b2d7453f452b8f886ef32bb23f46 = $(`<div id="html_5b33b2d7453f452b8f886ef32bb23f46" style="width: 100.0%; height: 100.0%;">Arun Jaitley Stadium, Delhi</div>`)[0];
+            popup_cc51049408cc46eda5245c5aa1d90505.setContent(html_5b33b2d7453f452b8f886ef32bb23f46);
+        
+
+        marker_4d1f5873386945afb4cf59cc1464c8c5.bindPopup(popup_cc51049408cc46eda5245c5aa1d90505)
+        ;
+
+        
+    
+    
+            marker_4d1f5873386945afb4cf59cc1464c8c5.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df6bd328ce9f42b0bfa533c423ecf9e7 = L.marker(
+                [12.97881265, 77.59957750299715],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_13908e0e62b04b888f97c4cd41a21b70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_091b4ad4caff40e99288714add3a8d81 = $(`<div id="html_091b4ad4caff40e99288714add3a8d81" style="width: 100.0%; height: 100.0%;">M.Chinnaswamy Stadium, Bengaluru</div>`)[0];
+            popup_13908e0e62b04b888f97c4cd41a21b70.setContent(html_091b4ad4caff40e99288714add3a8d81);
+        
+
+        marker_df6bd328ce9f42b0bfa533c423ecf9e7.bindPopup(popup_13908e0e62b04b888f97c4cd41a21b70)
+        ;
+
+        
+    
+    
+            marker_df6bd328ce9f42b0bfa533c423ecf9e7.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ce7130a8dd34c38b0d4f3ee5afbe4e1 = L.marker(
+                [17.4059481, 78.5505637699028],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_728b615e9d4d4414b6ae051cb46a5f78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09c823f98f3c41428f5449a797af2093 = $(`<div id="html_09c823f98f3c41428f5449a797af2093" style="width: 100.0%; height: 100.0%;">Rajiv Gandhi International Stadium, Uppal, Hyderabad</div>`)[0];
+            popup_728b615e9d4d4414b6ae051cb46a5f78.setContent(html_09c823f98f3c41428f5449a797af2093);
+        
+
+        marker_5ce7130a8dd34c38b0d4f3ee5afbe4e1.bindPopup(popup_728b615e9d4d4414b6ae051cb46a5f78)
+        ;
+
+        
+    
+    
+            marker_5ce7130a8dd34c38b0d4f3ee5afbe4e1.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ddfc796d4764a6fb615d04683eda869 = L.marker(
+                [30.69085905, 76.7374305321502],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_748edd7f8fde4035aceb5d4c75d7c309 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8bb6a8f32b0468e9177da04efdde65f = $(`<div id="html_d8bb6a8f32b0468e9177da04efdde65f" style="width: 100.0%; height: 100.0%;">Bindra Stadium, Mohali</div>`)[0];
+            popup_748edd7f8fde4035aceb5d4c75d7c309.setContent(html_d8bb6a8f32b0468e9177da04efdde65f);
+        
+
+        marker_2ddfc796d4764a6fb615d04683eda869.bindPopup(popup_748edd7f8fde4035aceb5d4c75d7c309)
+        ;
+
+        
+    
+    
+            marker_2ddfc796d4764a6fb615d04683eda869.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc10df6b01b3466598f6dd71debb8bad = L.marker(
+                [17.7975094, 83.35300310436574],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_9a5d4ce2dfa544c1bdb1418eeff77560 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ba84b4a89834fc482d4f236203a75b6 = $(`<div id="html_5ba84b4a89834fc482d4f236203a75b6" style="width: 100.0%; height: 100.0%;">Dr YS Rajasekhara Reddy Cricket Stadium, Visakhapatnam</div>`)[0];
+            popup_9a5d4ce2dfa544c1bdb1418eeff77560.setContent(html_5ba84b4a89834fc482d4f236203a75b6);
+        
+
+        marker_dc10df6b01b3466598f6dd71debb8bad.bindPopup(popup_9a5d4ce2dfa544c1bdb1418eeff77560)
+        ;
+
+        
+    
+    
+            marker_dc10df6b01b3466598f6dd71debb8bad.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72b723266a644c34b8215b281785c48e = L.marker(
+                [18.6738164, 73.7064113964208],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_45175cca32b94fa08f8404fd27abfa00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_810c5e700fd24657a2abebd00fb6f3e2 = $(`<div id="html_810c5e700fd24657a2abebd00fb6f3e2" style="width: 100.0%; height: 100.0%;">Maharashtra Cricket Association Stadium, Pune</div>`)[0];
+            popup_45175cca32b94fa08f8404fd27abfa00.setContent(html_810c5e700fd24657a2abebd00fb6f3e2);
+        
+
+        marker_72b723266a644c34b8215b281785c48e.bindPopup(popup_45175cca32b94fa08f8404fd27abfa00)
+        ;
+
+        
+    
+    
+            marker_72b723266a644c34b8215b281785c48e.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6387d4bc3b804f6c89af56c24f1745bb = L.marker(
+                [22.72425115, 75.87967029005587],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_91a72ad5433d4f4bbcded3f439458b33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5bc4d17235643ed9fc27d79191edfa3 = $(`<div id="html_f5bc4d17235643ed9fc27d79191edfa3" style="width: 100.0%; height: 100.0%;">Holkar Cricket Stadium, Indore</div>`)[0];
+            popup_91a72ad5433d4f4bbcded3f439458b33.setContent(html_f5bc4d17235643ed9fc27d79191edfa3);
+        
+
+        marker_6387d4bc3b804f6c89af56c24f1745bb.bindPopup(popup_91a72ad5433d4f4bbcded3f439458b33)
+        ;
+
+        
+    
+    
+            marker_6387d4bc3b804f6c89af56c24f1745bb.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3143ce44c1be470e94893672b965de8c = L.marker(
+                [22.362785549999998, 70.71008439911074],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_2d2a309c1e884b78bdf5a08b174129a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4fc7a3768c545bb94563941078f4b4b = $(`<div id="html_a4fc7a3768c545bb94563941078f4b4b" style="width: 100.0%; height: 100.0%;">Saurashtra Cricket Association Stadium, Rajkot</div>`)[0];
+            popup_2d2a309c1e884b78bdf5a08b174129a5.setContent(html_a4fc7a3768c545bb94563941078f4b4b);
+        
+
+        marker_3143ce44c1be470e94893672b965de8c.bindPopup(popup_2d2a309c1e884b78bdf5a08b174129a5)
+        ;
+
+        
+    
+    
+            marker_3143ce44c1be470e94893672b965de8c.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfd3cb4e75904573a5ff374efc3cca5e = L.marker(
+                [26.482108099999998, 80.34775429154809],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_c5ba70850695487aab9c7a019bd66419 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_055f0c4d62914d6c8d05609f02272179 = $(`<div id="html_055f0c4d62914d6c8d05609f02272179" style="width: 100.0%; height: 100.0%;">Green Park, Kanpur</div>`)[0];
+            popup_c5ba70850695487aab9c7a019bd66419.setContent(html_055f0c4d62914d6c8d05609f02272179);
+        
+
+        marker_cfd3cb4e75904573a5ff374efc3cca5e.bindPopup(popup_c5ba70850695487aab9c7a019bd66419)
+        ;
+
+        
+    
+    
+            marker_cfd3cb4e75904573a5ff374efc3cca5e.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d919df3e3fd641a28494632ef6fc5dfa = L.marker(
+                [21.203402949999997, 81.82302432017622],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_9e0900895cbe47918939e918c10e6e1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b4cdc78210a4996bbc9c23a927a20a8 = $(`<div id="html_9b4cdc78210a4996bbc9c23a927a20a8" style="width: 100.0%; height: 100.0%;">Shaheed Veer Narayan Singh International Stadium, Raipur</div>`)[0];
+            popup_9e0900895cbe47918939e918c10e6e1f.setContent(html_9b4cdc78210a4996bbc9c23a927a20a8);
+        
+
+        marker_d919df3e3fd641a28494632ef6fc5dfa.bindPopup(popup_9e0900895cbe47918939e918c10e6e1f)
+        ;
+
+        
+    
+    
+            marker_d919df3e3fd641a28494632ef6fc5dfa.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92e256132bc64651a9efb9dde41f4e6b = L.marker(
+                [23.09269475, 72.59783578302674],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_f9a2b52fda1f4ef9a055bcbcf962cc46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_972982c9af154867a6accd35b85c4331 = $(`<div id="html_972982c9af154867a6accd35b85c4331" style="width: 100.0%; height: 100.0%;">Sardar Patel (Gujarat) Stadium, Motera, Ahmedabad</div>`)[0];
+            popup_f9a2b52fda1f4ef9a055bcbcf962cc46.setContent(html_972982c9af154867a6accd35b85c4331);
+        
+
+        marker_92e256132bc64651a9efb9dde41f4e6b.bindPopup(popup_f9a2b52fda1f4ef9a055bcbcf962cc46)
+        ;
+
+        
+    
+    
+            marker_92e256132bc64651a9efb9dde41f4e6b.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e50c0867ec134cbbbb865c6486441144 = L.marker(
+                [18.9320101, 72.82501261609113],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_9a54cb275cd3451e9ef3c0acd92d7300 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_333fed59459741fd905c1a73b2dbdc47 = $(`<div id="html_333fed59459741fd905c1a73b2dbdc47" style="width: 100.0%; height: 100.0%;">Brabourne Stadium, Mumbai</div>`)[0];
+            popup_9a54cb275cd3451e9ef3c0acd92d7300.setContent(html_333fed59459741fd905c1a73b2dbdc47);
+        
+
+        marker_e50c0867ec134cbbbb865c6486441144.bindPopup(popup_9a54cb275cd3451e9ef3c0acd92d7300)
+        ;
+
+        
+    
+    
+            marker_e50c0867ec134cbbbb865c6486441144.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5647cedc2a1e4d48879b26b4e1ad2402 = L.marker(
+                [23.31045215, 85.27487741053811],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_deaf095818d0424abe58a4b5413218a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eef21655c62140b3b355dd1908a5c589 = $(`<div id="html_eef21655c62140b3b355dd1908a5c589" style="width: 100.0%; height: 100.0%;">JSCA International Stadium Complex, Ranchi</div>`)[0];
+            popup_deaf095818d0424abe58a4b5413218a7.setContent(html_eef21655c62140b3b355dd1908a5c589);
+        
+
+        marker_5647cedc2a1e4d48879b26b4e1ad2402.bindPopup(popup_deaf095818d0424abe58a4b5413218a7)
+        ;
+
+        
+    
+    
+            marker_5647cedc2a1e4d48879b26b4e1ad2402.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_670c1211d67c433392bfe30a1216fa00 = L.marker(
+                [20.48070435, 85.86852541310051],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_62d792add09c4887887982049043bd48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_077266482ca047a9a7cc3c6fed2f093c = $(`<div id="html_077266482ca047a9a7cc3c6fed2f093c" style="width: 100.0%; height: 100.0%;">Barabati Stadium, Cuttack</div>`)[0];
+            popup_62d792add09c4887887982049043bd48.setContent(html_077266482ca047a9a7cc3c6fed2f093c);
+        
+
+        marker_670c1211d67c433392bfe30a1216fa00.bindPopup(popup_62d792add09c4887887982049043bd48)
+        ;
+
+        
+    
+    
+            marker_670c1211d67c433392bfe30a1216fa00.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39c4e9e766bd4d619ce20a80b5341851 = L.marker(
+                [32.1975918, 76.32503371593408],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_35876a317ea84e2ba683b32f2ca039a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d0b67c18a9746febec02943a866143d = $(`<div id="html_7d0b67c18a9746febec02943a866143d" style="width: 100.0%; height: 100.0%;">Himachal Pradesh Cricket Association Stadium, Dharamsala</div>`)[0];
+            popup_35876a317ea84e2ba683b32f2ca039a2.setContent(html_7d0b67c18a9746febec02943a866143d);
+        
+
+        marker_39c4e9e766bd4d619ce20a80b5341851.bindPopup(popup_35876a317ea84e2ba683b32f2ca039a2)
+        ;
+
+        
+    
+    
+            marker_39c4e9e766bd4d619ce20a80b5341851.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06dd1fd65644471591aaa215bb9d05a0 = L.marker(
+                [11.0076344, 76.9697782],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_421ee36c65604cbb89172b8ea3c7e3f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_122fa34baa134855b77c1be141c095c9 = $(`<div id="html_122fa34baa134855b77c1be141c095c9" style="width: 100.0%; height: 100.0%;">Nehru Stadium, Kochi</div>`)[0];
+            popup_421ee36c65604cbb89172b8ea3c7e3f4.setContent(html_122fa34baa134855b77c1be141c095c9);
+        
+
+        marker_06dd1fd65644471591aaa215bb9d05a0.bindPopup(popup_421ee36c65604cbb89172b8ea3c7e3f4)
+        ;
+
+        
+    
+    
+            marker_06dd1fd65644471591aaa215bb9d05a0.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3c87d3d2868409099004def3bae0d6b = L.marker(
+                [19.042111650000002, 73.02585585897152],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_25353083ef194d6aaf89b835f9e3fbf0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be841052c26b48b3a34f8ae077e44e96 = $(`<div id="html_be841052c26b48b3a34f8ae077e44e96" style="width: 100.0%; height: 100.0%;">Dr DY Patil Stadium</div>`)[0];
+            popup_25353083ef194d6aaf89b835f9e3fbf0.setContent(html_be841052c26b48b3a34f8ae077e44e96);
+        
+
+        marker_b3c87d3d2868409099004def3bae0d6b.bindPopup(popup_25353083ef194d6aaf89b835f9e3fbf0)
+        ;
+
+        
+    
+    
+            marker_b3c87d3d2868409099004def3bae0d6b.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ff6ec94b75b4008ba48a26b6d4ec4e0 = L.marker(
+                [21.0135768, 79.03963196096828],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_e45c734c10ee4105b1582d3040da49d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_380aa2f657584a98a44e4d292e4de661 = $(`<div id="html_380aa2f657584a98a44e4d292e4de661" style="width: 100.0%; height: 100.0%;">Vidarbha Cricket Association Stadium, Nagpur</div>`)[0];
+            popup_e45c734c10ee4105b1582d3040da49d6.setContent(html_380aa2f657584a98a44e4d292e4de661);
+        
+
+        marker_5ff6ec94b75b4008ba48a26b6d4ec4e0.bindPopup(popup_e45c734c10ee4105b1582d3040da49d6)
+        ;
+
+        
+    
+    
+            marker_5ff6ec94b75b4008ba48a26b6d4ec4e0.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f43f8fe2b2c141e2b46fe75f6c67dcf3 = L.marker(
+                [-33.9742832, 18.4572951],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_2f1527bd1ad440eb82f5fa079e52de2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fb0ebd303454528976cb916b149a348 = $(`<div id="html_5fb0ebd303454528976cb916b149a348" style="width: 100.0%; height: 100.0%;">Newlands, Cape Town</div>`)[0];
+            popup_2f1527bd1ad440eb82f5fa079e52de2a.setContent(html_5fb0ebd303454528976cb916b149a348);
+        
+
+        marker_f43f8fe2b2c141e2b46fe75f6c67dcf3.bindPopup(popup_2f1527bd1ad440eb82f5fa079e52de2a)
+        ;
+
+        
+    
+    
+            marker_f43f8fe2b2c141e2b46fe75f6c67dcf3.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ffbc1d6aeee451b9647088b536249e7 = L.marker(
+                [-33.965769550000005, 25.60733242183312],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_7d4badededee4ac3ba3fbcd24a9b81f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_430e6d4187214e43bbb8c345ec83c382 = $(`<div id="html_430e6d4187214e43bbb8c345ec83c382" style="width: 100.0%; height: 100.0%;">St George's Park, Port Elizabeth</div>`)[0];
+            popup_7d4badededee4ac3ba3fbcd24a9b81f8.setContent(html_430e6d4187214e43bbb8c345ec83c382);
+        
+
+        marker_0ffbc1d6aeee451b9647088b536249e7.bindPopup(popup_7d4badededee4ac3ba3fbcd24a9b81f8)
+        ;
+
+        
+    
+    
+            marker_0ffbc1d6aeee451b9647088b536249e7.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92a4a8b61e9f401aa73b72ae7e37bb5a = L.marker(
+                [-29.8479863, 31.0285221],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_2b7638cf81d644d69bc6a0721b4ff6c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88ec1517d13f40c1bd685325549228a4 = $(`<div id="html_88ec1517d13f40c1bd685325549228a4" style="width: 100.0%; height: 100.0%;">Kingsmead, Durban</div>`)[0];
+            popup_2b7638cf81d644d69bc6a0721b4ff6c2.setContent(html_88ec1517d13f40c1bd685325549228a4);
+        
+
+        marker_92a4a8b61e9f401aa73b72ae7e37bb5a.bindPopup(popup_2b7638cf81d644d69bc6a0721b4ff6c2)
+        ;
+
+        
+    
+    
+            marker_92a4a8b61e9f401aa73b72ae7e37bb5a.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9234d81aff30403e872309a90938d51c = L.marker(
+                [-25.85962375, 28.195644468871414],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_f76136ce8e7843589873271299ec3b55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec3b33acf09940f18477bb691e590591 = $(`<div id="html_ec3b33acf09940f18477bb691e590591" style="width: 100.0%; height: 100.0%;">SuperSport Park, Centurion</div>`)[0];
+            popup_f76136ce8e7843589873271299ec3b55.setContent(html_ec3b33acf09940f18477bb691e590591);
+        
+
+        marker_9234d81aff30403e872309a90938d51c.bindPopup(popup_f76136ce8e7843589873271299ec3b55)
+        ;
+
+        
+    
+    
+            marker_9234d81aff30403e872309a90938d51c.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_055149b0ba89491fa11c6a84cd52c786 = L.marker(
+                [-33.006837149999996, 27.91952640427005],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_cb8da8cf989b4f35b7e79a98db282110 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_180841474e8e47ad99ffb33261154212 = $(`<div id="html_180841474e8e47ad99ffb33261154212" style="width: 100.0%; height: 100.0%;">Buffalo Park, East London</div>`)[0];
+            popup_cb8da8cf989b4f35b7e79a98db282110.setContent(html_180841474e8e47ad99ffb33261154212);
+        
+
+        marker_055149b0ba89491fa11c6a84cd52c786.bindPopup(popup_cb8da8cf989b4f35b7e79a98db282110)
+        ;
+
+        
+    
+    
+            marker_055149b0ba89491fa11c6a84cd52c786.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ffe67b38dfa40e597218b3afe651b8c = L.marker(
+                [-26.13130915, 28.057316999832473],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_f8200d2e58224992a95906dad25ae5c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a22a74515842413a80fa1bc9ac74b5b8 = $(`<div id="html_a22a74515842413a80fa1bc9ac74b5b8" style="width: 100.0%; height: 100.0%;">Wanderers Stadium, Johannesburg</div>`)[0];
+            popup_f8200d2e58224992a95906dad25ae5c8.setContent(html_a22a74515842413a80fa1bc9ac74b5b8);
+        
+
+        marker_0ffe67b38dfa40e597218b3afe651b8c.bindPopup(popup_f8200d2e58224992a95906dad25ae5c8)
+        ;
+
+        
+    
+    
+            marker_0ffe67b38dfa40e597218b3afe651b8c.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d606ae9b460e43bb807ffa61271654dc = L.marker(
+                [-28.74264205, 24.796774571818183],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_c229b39fd12447b58cad1ada7cd92272 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_143bad121278442888a975118aa9f312 = $(`<div id="html_143bad121278442888a975118aa9f312" style="width: 100.0%; height: 100.0%;">Diamond Oval, Kimberley</div>`)[0];
+            popup_c229b39fd12447b58cad1ada7cd92272.setContent(html_143bad121278442888a975118aa9f312);
+        
+
+        marker_d606ae9b460e43bb807ffa61271654dc.bindPopup(popup_c229b39fd12447b58cad1ada7cd92272)
+        ;
+
+        
+    
+    
+            marker_d606ae9b460e43bb807ffa61271654dc.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db4db51d7107421696747ef505f89b60 = L.marker(
+                [-29.0415639, 26.3101262],
+                {}
+            ).addTo(map_b960d4a4d63b431bad0029240aabf5d2);
+        
+    
+        var popup_5122c325088f43b4b429cbf5ae4154c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e9e090367224ebf9bad011d3db8d9cf = $(`<div id="html_0e9e090367224ebf9bad011d3db8d9cf" style="width: 100.0%; height: 100.0%;">Springbok Park, Bloemfontein</div>`)[0];
+            popup_5122c325088f43b4b429cbf5ae4154c5.setContent(html_0e9e090367224ebf9bad011d3db8d9cf);
+        
+
+        marker_db4db51d7107421696747ef505f89b60.bindPopup(popup_5122c325088f43b4b429cbf5ae4154c5)
+        ;
+
+        
+    
+    
+            marker_db4db51d7107421696747ef505f89b60.bindTooltip(
+                `<div>
+                     Click Here For Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
